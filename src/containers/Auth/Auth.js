@@ -125,7 +125,7 @@ class Auth extends Component {
           <Button btnType="Success">SUBMIT</Button>
         </form>
         <Button btnType="Danger" clicked={this.switchAuthModeHandler}>
-          SWITCH TO {this.state.isSignup ? 'SIGNIN' : 'SINGUP'}
+          SWITCH TO {this.state.isSignup ? 'SIGNIN' : 'SIGNUP'}
         </Button>
       </div>
     );
@@ -150,7 +150,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Auth);
+export default connect(mapStateToProps, mapDispatchToProps)(Auth);
